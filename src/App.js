@@ -1,11 +1,13 @@
-import logo from './logo.svg';
+import mainBalconyView from './images/balconyview.jpg';
 import './App.css';
+import Header from './components/Header'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <Header />
+      <div className="App-main">
+        <img src={mainBalconyView} className="App-image" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -17,7 +19,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+        </div>
     </div>
   );
 }
