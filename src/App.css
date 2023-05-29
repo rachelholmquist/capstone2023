@@ -12,18 +12,39 @@
   padding: 15px;
 }
 
-.App-header {
-  background-color: white;
-  border-bottom: solid 5px black;
-  min-height: 20vh;
+.App-title {
+  background-color: #BEE9E8;
+  height: 20vh;
   display: flex;
-  align-items: stretch;
-  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.App-header {
+  background-color: #62B6CB;
+  min-height: 8vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   gap: 10px;
   font-size: calc(10px + 2vmin);
-  color: black;
+  color: #192841;
 }
 
 .App-link:hover {
-  color: #61dafb;
+  font-weight: bold;
+}
+
+.Book {
+  color: #192841;
+  background-color:aquamarine;
+  border: 5px solid #62B6CB;
+  border-radius: 20px;
+  font-size: calc(10px + 2vmin);
+}
+
+.Book:hover {
+  font-weight: bold;
+  border: 2px solid #192841;
+  border-radius: 20px;
 }

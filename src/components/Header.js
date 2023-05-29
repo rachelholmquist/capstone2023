@@ -2,15 +2,18 @@
 
 const Header = () => {
     return (
+        <div className='App-title'>
         <nav className="App-header">
-            <ul>
-                <li><a href className='App-link'>Home</a></li>
-                <li><a href className='App-link'>Accomodations</a></li>
-                <li>Current Packages</li>
-                <li>Activities & Amenities</li>
-                <li>Your Account</li>
-            </ul>
+            
+                <a href className='App-link'>Home</a>
+                <a href className='App-link'>Accomodations</a>
+                <a href className='App-link'>Current Packages</a>
+                <a href className='App-link'>Activities & Amenities</a>
+                <a href className='App-link'>Your Account</a>
+                <button className='Book'>BOOK NOW</button>
+            
         </nav>
+        </div>
     )
 }
 
