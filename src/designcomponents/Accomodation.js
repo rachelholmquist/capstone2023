@@ -4,9 +4,14 @@ import kingRoom from '../images/kingRoomInterior.jpg'
 const Accomodation = () => {
     return (
         <div className={styles.card}>
+            
             <img className={styles.image} src={kingRoom} alt="king room"/>
-            <h1>King Waterfront Room</h1>
-            <p className={styles.room_details}></p>
+            <div className={styles.detailCard}>
+            <h1>King Waterfront Room</h1><br/>
+            <p className={styles.room_details}>blah blah blah blah blah blah 
+            blah blah blah blah blah blah blah blah blah blah blah blah blah 
+            blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+            </div>
         </div>
     );
 };
