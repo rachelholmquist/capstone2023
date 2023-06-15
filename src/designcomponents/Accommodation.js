@@ -1,7 +1,7 @@
-import styles from './Accomodation.module.css'
+import styles from './Accommodation.module.css'
 import kingRoom from '../images/kingRoomInterior.jpg'
 
-const Accomodation = () => {
+const Accommodation = () => {
     return (
         <div className={styles.card}>
             
@@ -16,4 +16,4 @@ const Accomodation = () => {
     );
 };
 
-export default Accomodation
+export default Accommodation

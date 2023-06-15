@@ -3,12 +3,14 @@
 }
 
 .App-image {
-  height: 95vh 95vw;
+  height: 95%;
+  width: 95%;
   pointer-events: none;
+  padding-top: 20px;
 }
 
 .App-main {
-  background-color: whitesmoke;
+  background-color: rgb(244, 244, 244);
   padding: 15px;
 }
 
