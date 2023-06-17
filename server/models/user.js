@@ -9,7 +9,12 @@ module.exports = {
             allowNull: false,
             primaryKey: true
         },
-        username: DataTypes.STRING,
-        hashedPass: DataTypes.STRING
+        userName: DataTypes.STRING,
+        hashedPass: DataTypes.STRING,
+        firstName: DataTypes.STRING,
+        lastName: DataTypes.STRING,
+        address: DataTypes.STRING,
+        email: DataTypes.STRING,
+        phone: DataTypes.STRING
     })
 }

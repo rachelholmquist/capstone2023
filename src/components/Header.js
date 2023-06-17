@@ -12,10 +12,11 @@ const Header = () => {
     return (
         <div className='App-title'>
         <nav className="App-header">
-        <NavLink style={activeLinkStyle} to='/'><a href className='App-link'>Home</a></NavLink>
-        <NavLink style={activeLinkStyle} to='accommodation'><a href className='App-link'>Accommodations</a></NavLink>
-                <a href className='App-link'>Current Packages</a>
-                <a href className='App-link'>Activities & Amenities</a>
+        <NavLink style={activeLinkStyle} to='/' className='App-link'>Our Island</NavLink>
+        <NavLink style={activeLinkStyle} to='accommodation' className='App-link'>Accommodations</NavLink>
+                <a href className='App-link'>Activities</a>
+                <a href className='App-link'>Current Specials</a>
+                <a href className='App-link'>Plan Your Trip</a>
                 <NavLink style={activeLinkStyle} to='profile'><a href className='App-link'>Your Account</a></NavLink>
                 <button className='Book'>BOOK NOW</button>
             
