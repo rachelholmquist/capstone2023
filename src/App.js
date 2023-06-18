@@ -1,13 +1,14 @@
 
 import './App.css';
-// import AccomodationPage from './components/AccomodationPage';
 import Header from './components/Header'
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 import Home from './components/Home'
 import Profile from './components/Profile'
-import Form from './components/Form'
+import Activities from './components/Activities'
 import AccommodationPage from './components/AccommodationPage';
+import CurrentSpecials from './components/CurrentSpecials';
+import TripPlanning from './components/TripPlanning';
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='profile' element={<Profile/>}/>
       <Route path='accommodation' element={<AccommodationPage/>}/>
-      {/* <Route path='' element={}/> */}
+      <Route path='activities' element={<Activities/>}/>
+      <Route path='current-specials' element={<CurrentSpecials/>}/>
+      <Route path='trip-planning' element={<TripPlanning/>}/>
       </Routes>
     </div>
   );
