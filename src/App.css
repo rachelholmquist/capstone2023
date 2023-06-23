@@ -5,24 +5,24 @@
 .App-image {
   height: 95%;
   width: 95%;
-  pointer-events: none;
-  padding-top: 20px;
+  margin: 20px;
+  background-color: #f5ebe0;
 }
 
 .App-main {
-  background-color: rgb(244, 244, 244);
+  background-color: #edede9;
   padding: 15px;
 }
 
 .App-title {
-  background-color: #BEE9E8;
+  background-color: #edede9;
   height: 20vh;
   display: flex;
   align-items: flex-end;
 }
 
 .App-header {
-  background-color: #62B6CB;
+  background-color: #d6ccc2;
   min-height: 8vh;
   width: 100vw;
   display: flex;
@@ -35,12 +35,13 @@
 
 .App-link:hover {
   font-weight: bold;
+  color: #192841;
 }
 
 .Book {
   color: #192841;
-  background-color:aquamarine;
-  border: 5px solid #62B6CB;
+  background-color: #d5bdaf;
+  border: 1px solid #192841;
   border-radius: 20px;
   font-size: calc(10px + 2vmin);
 }
@@ -49,4 +50,25 @@
   font-weight: bold;
   border: 2px solid #192841;
   border-radius: 20px;
+}
+
+.home-block {
+  height: 95%;
+  width: 95%;
+  margin: 20px;
+  background-color: #f5ebe0;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  text-align: center;
+  font-size: 16px;
+  width: 45%
+}
+
+.block-image {
+  height: 85%;
+  width: 55%;
 }
