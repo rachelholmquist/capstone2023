@@ -1,9 +1,14 @@
-import Accommodation from "../designcomponents/Accommodation";
+// import axios from 'axios'
 
 const AccommodationPage = () => {
-    return (
-        <Accommodation/>
-    )
+    // axios.get('/rooms')
+    // .then()
+    // .catch()
+
+
+    // return (
+        
+    // )
 }
 
 export default AccommodationPage

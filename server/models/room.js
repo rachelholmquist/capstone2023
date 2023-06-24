@@ -13,6 +13,6 @@ module.exports = {
         description: DataTypes.STRING,
         maxPeople: DataTypes.INTEGER,
         price: DataTypes.INTEGER,
-        imageUrl: DataTypes.INTEGER, 
+        imageUrl: DataTypes.STRING, 
     })
 }

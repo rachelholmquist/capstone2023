@@ -14,6 +14,6 @@ module.exports = {
         estimatedTime: DataTypes.STRING,
         description: DataTypes.STRING,
         location: DataTypes.STRING,
-        price: DataTypes.STRING
+        price: DataTypes.DECIMAL
 })
 }
