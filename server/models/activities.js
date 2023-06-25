@@ -10,10 +10,12 @@ module.exports = {
             primaryKey: true
         },
         name: DataTypes.STRING,
-        skillLevel: DataTypes.STRING,
-        estimatedTime: DataTypes.STRING,
+        skilllevel: DataTypes.STRING,
+        estimatedtime: DataTypes.STRING,
         description: DataTypes.STRING,
         location: DataTypes.STRING,
         price: DataTypes.DECIMAL
+}, {
+    timestamps: false,
 })
 }

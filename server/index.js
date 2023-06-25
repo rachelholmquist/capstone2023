@@ -4,13 +4,17 @@ const express = require("express");
 const cors = require('cors')
 
 const { sequelize } = require("./util/database");
-const {getAllRooms} = require('./controllers/rooms') 
+const { getActivities } = require("./controllers/activityList");
+const { getAllRooms } = require("./controllers/rooms");
 const app = express();
 
 app.use(express.json())
 app.use(cors())
 
-app.get('/rooms', getAllRooms)
+app.get('/', () => {console.log('Made it home')});
+// app.get('/test', getConsoleLog)
+app.get('/activities', getActivities)
+app.get('/room', getAllRooms)
 
 try {
   sequelize.authenticate();
@@ -23,6 +27,6 @@ try {
 sequelize
   .sync()
   .then(() => {
-    app.listen(5432, () => console.log(`server running on ` + 5432));
+    app.listen(4042, () => console.log(`server running on ` + 4042));
   })
   .catch((err) => console.log(err));

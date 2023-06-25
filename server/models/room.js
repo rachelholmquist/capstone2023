@@ -2,7 +2,7 @@ const {DataTypes} = require('sequelize')
 const {sequelize} = require('../util/database')
 
 module.exports = {
-    room : sequelize.define('room', {
+    Rooms: sequelize.define('rooms', {
         id: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
@@ -11,8 +11,10 @@ module.exports = {
         },
         title: DataTypes.STRING,
         description: DataTypes.STRING,
-        maxPeople: DataTypes.INTEGER,
-        price: DataTypes.INTEGER,
-        imageUrl: DataTypes.STRING, 
+        maxpeople: DataTypes.INTEGER,
+        price: DataTypes.NUMBER,
+        imageurl: DataTypes.STRING, 
+    }, {
+        timestamps: false
     })
 }
