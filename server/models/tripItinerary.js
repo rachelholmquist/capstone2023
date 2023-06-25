@@ -2,7 +2,7 @@ const {DataTypes} = require('sequelize')
 const {sequelize} = require('../util/database')
 
 module.exports = {
-    tripItinerary : sequelize.define('trip-itinerary', {
+    tripItinerary : sequelize.define('tripItinerary', {
         id: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
@@ -17,5 +17,7 @@ module.exports = {
         userSavedActivities: DataTypes.STRING,
         tripDates: DataTypes.DATE,
         userId: DataTypes.INTEGER,
+    }, {
+        timestamps: false
     })
 }

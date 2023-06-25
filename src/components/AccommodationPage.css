@@ -1,0 +1,29 @@
+body {
+    align-items: center;
+    font-size: 14px;
+}
+
+.room-card {
+    margin: 20px;
+    width: 95vw;
+    height: 35vh;
+    border-radius: 20px;
+    background-color: #d6ccc2;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.room-image {
+    padding: 10px;
+    height: 33vh;
+    width: 70%;
+}
+
+.room-description {
+    padding: 10px;
+    height: 90%;
+    width: 50%;
+    display: flex;
+    display: block;
+}

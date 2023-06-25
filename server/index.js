@@ -6,6 +6,7 @@ const cors = require('cors')
 const { sequelize } = require("./util/database");
 const { getActivities } = require("./controllers/activityList");
 const { getAllRooms } = require("./controllers/rooms");
+const { getTripItinerary } = require("./controllers/getTripItinerary")
 const app = express();
 
 app.use(express.json())
@@ -15,6 +16,7 @@ app.get('/', () => {console.log('Made it home')});
 // app.get('/test', getConsoleLog)
 app.get('/activities', getActivities)
 app.get('/room', getAllRooms)
+app.get('/tripItinerary', getTripItinerary)
 
 try {
   sequelize.authenticate();
