@@ -1,0 +1,27 @@
+body {
+    font-size: 14;
+    font-style: arial;
+    color: #192841;
+}
+
+.background-style {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 16;
+    text-decoration: underline;
+    text-align: left;
+    font-style: arial;
+    color: #192841;
+}
+
+.activity-card {
+    margin: 20px;
+    border: 1px solid black;
+    height: 250px;
+    width: 400px;
+    background-color: white;
+    text-align: left;
+}
