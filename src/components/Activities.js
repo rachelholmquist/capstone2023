@@ -19,7 +19,7 @@ const Activities = () => {
 
     const mappedActivities = activities.map((activity => {
         return (
-            <div className='background-style'>
+            
             <div key={activity.id} className='activity-card'>
                 <h1>{activity.name}</h1>
                 <p>{activity.description}</p>
@@ -27,14 +27,15 @@ const Activities = () => {
                 <p>Estimated Time:{activity.estimatedtime}</p>
                 <p>Price:{activity.price}</p>
                 <p>location: {activity.location}</p>
-
-            </div></div>
+            </div>
         )
     }));
     return (
+        <div className='background-style'>
         <main>
           {mappedActivities}
         </main>
+        </div>
       );
 }
 

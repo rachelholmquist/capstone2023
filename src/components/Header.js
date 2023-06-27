@@ -23,33 +23,22 @@ const Header = () => {
           Accommodations
         </NavLink>
         <NavLink 
+        className="App-link"
         style={activeLinkStyle} 
         to="activities">
-          <a href className="App-link">
             Activities
-          </a>
         </NavLink>
         <NavLink 
-        style={activeLinkStyle}
-         to="current-specials">
-          <a href className="App-link">
-            Current Specials
-          </a>
-        </NavLink>
-        <NavLink 
+        className="App-link"
         style={activeLinkStyle}
          to="trip-planning">
-          <a href className="App-link">
             Plan Your Trip
-          </a>
         </NavLink>
         <NavLink 
-        // style={activeLinkStyle}
-        activeClassName="Active"
+        className="App-link"
+        style={activeLinkStyle}
          to="profile">
-          <a href className="App-link">
-            Your Account
-          </a>
+            Your Account          
         </NavLink>
         <button className="Book">BOOK NOW</button>
       </nav>

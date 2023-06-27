@@ -3,6 +3,7 @@ import islandView from '../images/islandview.jpg'
 import balconyView from '../images/balconyview.jpg'
 import snorkeling from '../images/snorkeling.jpg'
 import spa from '../images/spa.jpg'
+import Footer from './Footer'
 import '../App.css';
 
 const Home = () => {
@@ -26,7 +27,7 @@ const Home = () => {
           <div className="info"><h1>Endless Activities</h1>blah blah blahblah</div>
           
         </div>
-        
+        {Footer}
         </div>
     )
 }

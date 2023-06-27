@@ -38,6 +38,11 @@
   color: #192841;
 }
 
+.App-link {
+  color: #192841;
+  text-decoration: none;
+}
+
 .Book {
   color: #192841;
   background-color: #d5bdaf;
