@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import './Activities.css'
+import Card from '../UI/Card'
 
 const Activities = () => {
     const [activities, setActivities] = useState([]);
@@ -20,12 +21,12 @@ const Activities = () => {
     const mappedActivities = activities.map((activity => {
         return (
             
-            <div key={activity.id} className='activity-card'>
+            <Card key={activity.id} className='activity-card'>
                 <h1>{activity.name}</h1>
                 <p>{activity.description}</p>
-                <p><h3>Skill Level:</h3>{activity.skilllevel} </p><p>  <h3>Estimated Time:</h3>{activity.estimatedtime}</p><p>
-               <h3> Price:</h3>{activity.price}  </p><p>  <h3>location:</h3> {activity.location}</p>
-            </div>
+                <p><b>Skill Level:</b>{activity.skilllevel}   <b>Estimated Time:</b>{activity.estimatedtime}
+               <b> Price:</b>{activity.price} <b>location:</b> {activity.location}</p>
+            </Card>
         )
     }));
     return (

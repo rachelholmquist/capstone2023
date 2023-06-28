@@ -37,6 +37,7 @@ h4 {
   justify-content: space-around;
   font-size: 20px;
   color: #192841;
+  border-bottom: 10px solid #f5ebe0;
 }
 
 .App-link:hover {
@@ -64,9 +65,8 @@ h4 {
 }
 
 .home-block {
-  height: 95%;
-  width: 95%;
-  margin: 20px;
+  height: 100%;
+  width: 100%;
   background-color: #f5ebe0;
   margin-top: 40px;
   display: flex;
@@ -82,4 +82,9 @@ h4 {
 .block-image {
   height: 85%;
   width: 55%;
+}
+
+.activity-card {
+  display: flex;
+    flex-direction: column;
 }

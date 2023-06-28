@@ -1,0 +1,75 @@
+.radio {
+    font-size: 20px;
+    width: 18px;
+}
+
+.date-input {
+    font-size: 20px;
+    border: none;
+    background-color: #f5ebe0;
+    color: #192841;
+}
+
+form {
+    align-content: center;
+}
+
+h3 {
+    padding: 10px;
+}
+
+.date {
+    height: 100px;
+}
+
+.time {
+    height: 325px;
+}
+
+.budget {
+    height: 100px;
+}
+
+.budget-input {
+    text-align: center;
+    width: 90px;
+    font-size: 20px;
+    border: none;
+    background-color: #f5ebe0;
+    color: #192841;
+}
+
+.activities {
+    height: 120px;
+}
+
+.activity-text {
+    width: 500px;
+    font-size: 20px;
+    border: none;
+    background-color: #f5ebe0;
+    color: #192841;
+    height: 30px;
+}
+
+main {
+    margin-top: -30px;
+}
+
+.submit {
+    margin: 20px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    background-color: #f5ebe0;
+    color: #192841;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #192841;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.submit:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 5px 1px #192841;
+}

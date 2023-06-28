@@ -9,10 +9,10 @@ import '../App.css';
 const Home = () => {
     return (
         <div className="App-main">
-        <img src={porch} className="App-image" alt="" />
+        <img src={islandView} className="App-image" alt="" />
         <div className="home-block">
           <div className="info"><h2>Our Island</h2>blah blah blahblah</div>
-          <img src={islandView} className="block-image" alt="" />
+          <img src={porch} className="block-image" alt="" />
         </div>
         <div className="home-block">
           <img src={balconyView} className="block-image" alt="" />

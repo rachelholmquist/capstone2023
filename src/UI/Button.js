@@ -4,10 +4,8 @@ import "./Button.css"
 const Button = (props) => {
   return (
     <button
-      className="main-btn"
-      type={props.type || "button"}
-      onClick={props.onClick}
-      onSubmit={props.onSubmit}
+      className={props.className}
+      id='main-btn'
     >
         {props.children}
     </button>

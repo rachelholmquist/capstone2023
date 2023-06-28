@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <div>
-      <nav className="App-header">
+      <nav className="App-header" >
         <div className='logo'>
       <h2>BLUE LAGOON</h2>
       <h4>A PRIVATE ISLAND RESORT</h4>
