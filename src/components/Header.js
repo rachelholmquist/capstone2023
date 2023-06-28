@@ -8,8 +8,9 @@ const Header = () => {
   };
 
   return (
-    <div className="App-title">
+    <div>
       <nav className="App-header">
+      <h2>BLUE LAGOON RESORT</h2>
         <NavLink 
         style={activeLinkStyle} 
         to="/" className="App-link">

@@ -3,6 +3,11 @@
   font-family: Arial Narrow, sans-serif;
 }
 
+h1 {
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .App-image {
   height: 95%;
   width: 95%;
@@ -15,12 +20,7 @@
   padding: 15px;
 }
 
-.App-title {
-  background-color: #edede9;
-  height: 20vh;
-  display: flex;
-  align-items: flex-end;
-}
+
 
 .App-header {
   font-family: Arial Narrow;
@@ -31,7 +31,7 @@
   align-items: center;
   justify-content: space-around;
   gap: 10px;
-  font-size: calc(10px + 2vmin);
+  font-size: 25px;
   color: #192841;
 }
 

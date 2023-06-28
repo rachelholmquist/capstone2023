@@ -11,20 +11,20 @@ const Home = () => {
         <div className="App-main">
         <img src={porch} className="App-image" alt="" />
         <div className="home-block">
-          <div className="info"><h1>Our Island</h1>blah blah blahblah</div>
+          <div className="info"><h2>Our Island</h2>blah blah blahblah</div>
           <img src={islandView} className="block-image" alt="" />
         </div>
         <div className="home-block">
           <img src={balconyView} className="block-image" alt="" />
-          <div className="info"><h1>Luxury Villas and Rooms</h1>blah blah blah blah</div>
+          <div className="info"><h2>Luxury Villas and Rooms</h2>blah blah blah blah</div>
         </div>
         <div className="home-block">
-          <div className="info"><h1>Unlimited Relaxation</h1>blah blah blahblah</div>
+          <div className="info"><h2>Unlimited Relaxation</h2>blah blah blahblah</div>
           <img src={spa} className="block-image" alt="" />
         </div>
         <div className="home-block">
         <img src={snorkeling} className="block-image" alt="" />
-          <div className="info"><h1>Endless Activities</h1>blah blah blahblah</div>
+          <div className="info"><h2>Endless Activities</h2>blah blah blahblah</div>
           
         </div>
         {Footer}

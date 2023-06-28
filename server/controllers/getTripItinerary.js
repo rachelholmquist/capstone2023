@@ -17,8 +17,8 @@ module.exports = {
 
         addTripItinerary: async (req, res) => {
             try {
-                const { breakfastTime, lunchTime, dinnerTime, userInterestActivities, budget, userSavedActivities, tripDates, userId } = req.body;
-                await tripItinerary.create({ breakfastTime, lunchTime, dinnerTime, interestedIn: userInterestActivities, budget, savedActivities: userSavedActivities, tripDates, userId });
+                const { breakfastTime, lunchTime, dinnerTime,  budget, userId } = req.body;
+                await tripItinerary.create({ breakfastTime, lunchTime, dinnerTime,  budget,  userId });
                 res.sendStatus(200)
             } catch (error) {
                 console.log("Error in post request");
