@@ -1,0 +1,11 @@
+.main-btn {
+    font-family: arial narrow;
+    background-color: #edede9;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.main-btn:hover{
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -3,15 +3,20 @@
   font-family: Arial Narrow, sans-serif;
 }
 
-h1 {
+.logo {
+  font-size: 18px;
   font-weight: bold;
   text-decoration: none;
 }
 
+h4 {
+  font-size: 14px;
+  text-decoration: none;
+}
+
 .App-image {
-  height: 95%;
-  width: 95%;
-  margin: 20px;
+  height: 100%;
+  width: 100%;
   background-color: #f5ebe0;
 }
 
@@ -30,8 +35,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #192841;
 }
 

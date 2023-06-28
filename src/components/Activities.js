@@ -23,19 +23,15 @@ const Activities = () => {
             <div key={activity.id} className='activity-card'>
                 <h1>{activity.name}</h1>
                 <p>{activity.description}</p>
-                <p>Skill Level:{activity.skilllevel}</p>
-                <p>Estimated Time:{activity.estimatedtime}</p>
-                <p>Price:{activity.price}</p>
-                <p>location: {activity.location}</p>
+                <p><h3>Skill Level:</h3>{activity.skilllevel} </p><p>  <h3>Estimated Time:</h3>{activity.estimatedtime}</p><p>
+               <h3> Price:</h3>{activity.price}  </p><p>  <h3>location:</h3> {activity.location}</p>
             </div>
         )
     }));
     return (
-        <div className='background-style'>
         <main>
           {mappedActivities}
         </main>
-        </div>
       );
 }
 

@@ -25,5 +25,16 @@ module.exports = {
                 console.log(error);
                 res.sendStatus(400);
             }
+        },
+
+        deleteTrip: async (req, res) => {
+                try {
+                    const {id} = req.params
+                    await tripItinerary.destroy({ where: {id: +id}})
+                    res.sendStatus(200)
+                } catch (error) {
+                    console.log(error)
+                    res.sendStatus(400)
+                }
         }
     }

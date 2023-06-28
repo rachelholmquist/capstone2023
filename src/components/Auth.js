@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import './Auth.css'
+import Button from '../UI/Button'
 
 
 const Auth = () => {
@@ -22,9 +23,9 @@ const Auth = () => {
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                     className='form-input'/><br/>
-                <button className='form-button'>
+                <Button className='form-button'>
                     {register ? 'Sign Up' : 'Login'}
-                </button>
+                </Button>
             </form>
             </main>
     )

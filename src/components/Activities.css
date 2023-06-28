@@ -4,25 +4,24 @@ body {
     color: #192841;
 }
 
-.background-style {
-    display: inline;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 h1 {
     font-size: 16;
-    text-decoration: underline;
-    text-align: left;
     font-style: arial;
     color: #192841;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+}
+
 .activity-card {
-    margin: 20px;
-    border: 1px solid black;
-    height: 250px;
-    width: 400px;
-    background-color: white;
-    text-align: left;
+    display: block;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0px 3px 15px #192841;
+    border-radius: 10px;
+    height: 30%;
+    width: 80%;
+    background-color: #f5ebe0;
 }

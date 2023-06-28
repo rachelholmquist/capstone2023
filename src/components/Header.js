@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import Button from "../UI/Button";
 
 const Header = () => {
   const activeLinkStyle = ({ activeLink }) => {
@@ -10,7 +11,10 @@ const Header = () => {
   return (
     <div>
       <nav className="App-header">
-      <h2>BLUE LAGOON RESORT</h2>
+        <div className='logo'>
+      <h2>BLUE LAGOON</h2>
+      <h4>A PRIVATE ISLAND RESORT</h4>
+      </div>
         <NavLink 
         style={activeLinkStyle} 
         to="/" className="App-link">
@@ -32,7 +36,7 @@ const Header = () => {
         <NavLink 
         className="App-link"
         style={activeLinkStyle}
-         to="trip-planning">
+         to="form">
             Plan Your Trip
         </NavLink>
         <NavLink 
@@ -41,7 +45,7 @@ const Header = () => {
          to="auth">
             Your Account          
         </NavLink>
-        <button className="Book">BOOK NOW</button>
+        <Button className="Book">BOOK NOW</Button>
       </nav>
     </div>
   );
