@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import './Auth.css'
 
 
 const Auth = () => {
@@ -7,24 +8,25 @@ const Auth = () => {
     const [password, setPassword] = useState('');
 
 
-    return (
-    <form className='form' onSubmit={submitHandler}>
+    return (<main>
+    <form className='register-form'>
                 <input 
                     type='text' 
                     placeholder='username' 
                     value={username}
                     onChange={e => setUsername(e.target.value)}
-                    className='form-input'/>
+                    className='form-input'/><br/>
                 <input 
                     type='password' 
                     placeholder='password' 
                     value={password}
                     onChange={e => setPassword(e.target.value)}
-                    className='form-input'/>
-                <button className='form-btn'>
+                    className='form-input'/><br/>
+                <button className='form-button'>
                     {register ? 'Sign Up' : 'Login'}
                 </button>
             </form>
+            </main>
     )
 }
 

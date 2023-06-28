@@ -1,12 +1,14 @@
-body {
+main {
     align-items: center;
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
 }
 
 .room-card {
     margin: 20px;
-    width: 95vw;
-    height: 35vh;
+    width: 800px;
+    height: 250px;
     border-radius: 20px;
     background-color: #d6ccc2;
     display: flex;
@@ -16,8 +18,8 @@ body {
 
 .room-image {
     padding: 10px;
-    height: 33vh;
-    width: 70%;
+    height: 200px;
+    width: 300px;
 }
 
 .room-description {

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: Arial Narrow, sans-serif;
 }
 
 .App-image {
@@ -22,6 +23,7 @@
 }
 
 .App-header {
+  font-family: Arial Narrow;
   background-color: #d6ccc2;
   min-height: 8vh;
   width: 100vw;
