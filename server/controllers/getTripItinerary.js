@@ -2,11 +2,10 @@ const {tripItinerary} = require('../models/tripItinerary')
 
 module.exports = {
     getTripItinerary: async(req,res) => {
-        console.log('test')
+        
 
         try{
             const itineraryList = await tripItinerary.findAll()
-            console.log(itineraryList)
               res.status(200).send(itineraryList);
         }
         catch(error) {
@@ -17,8 +16,8 @@ module.exports = {
 
         addTripItinerary: async (req, res) => {
             try {
-                const { breakfastTime, lunchTime, dinnerTime,  budget, userId } = req.body;
-                await tripItinerary.create({ breakfastTime, lunchTime, dinnerTime,  budget,  userId });
+                const { tripDates, breakfastTime, lunchTime, dinnerTime,  budget, userId} = req.body;
+                await tripItinerary.create({ tripDates, breakfastTime, lunchTime, dinnerTime,  budget,  userId});
                 res.sendStatus(200)
             } catch (error) {
                 console.log("Error in post request");

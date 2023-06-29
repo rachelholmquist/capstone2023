@@ -7,7 +7,7 @@ import Home from './components/Home';
 import Auth from './components/Auth';
 import Activities from './components/Activities';
 import AccommodationPage from './components/AccommodationPage';
-import Form from './components/Form'
+import Form from './components/Form';
 import TripPlanning from './components/TripPlanning';
 
 function App() {
@@ -22,8 +22,8 @@ function App() {
       <Route path='trip-planning' element={<TripPlanning/>}/>
       <Route path='form' element={<Form/>}/>
       </Routes>
-      
     </div>
+    
   );
 }
 

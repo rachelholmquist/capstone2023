@@ -1,7 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import Button from "../UI/Button";
 import "./Form.css";
 import Card from "../UI/Card";
 
@@ -12,8 +11,8 @@ const Form = () => {
   const [lunchTime, setLunchTime] = useState("11:00:00");
   const [dinnerTime, setDinnerTime] = useState("17:00:00");
   const [budget, setBudget] = useState("00.00");
-  const [tripDates, setTripDates] = useState();
-  const [interestedIn, setInterestedIn] = useState();
+  const [tripDates, setTripDates] = useState('');
+  // const [userInterestActivities, setUserInterestActivities] = useState('');
   const userId = 2;
 
   const submitHandler = (e) => {
@@ -21,11 +20,11 @@ const Form = () => {
 
     axios
       .post("http://localhost:4042/tripItinerary", {
+        tripDates,
         breakfastTime,
         lunchTime,
         dinnerTime,
         budget,
-        interestedIn,
         userId,
       })
       .then(() => {
@@ -124,35 +123,32 @@ const Form = () => {
           name="dinner"
           value="19:00:00"
           onChange={(e) => setDinnerTime(e.target.value)}
-        />{" "}
+        />
         7 pm
         <br />
       </Card>
-      <Card className={"activities"}>
+      {/* <Card className={("activities")}>
         <h3>Activities I'm interested in:</h3>
         <input
-        className='activity-text'
           type="text"
-          name="interested-activities"
           placeholder='type here...'
-          value={interestedIn}
-          onChange={(e) => setInterestedIn(e.target.value)}
+          value={userInterestActivities}
+          onChange={(e) => setUserInterestActivities(e.target.value)}
         />
-      </Card>
+      </Card> */}
       <Card className={"budget"}>
         <h3>Budget:</h3>
         $
         <input
           type="text"
           className="budget-input"
-          placeholder="Budget"
           value={budget}
           onChange={(e) => setBudget(e.target.value)}
         />
         <br />
       </Card>
 
-      <Button className={('submit')}>Submit</Button>
+      <button className='submit'>Submit</button>
     </form>
     </main>
   );

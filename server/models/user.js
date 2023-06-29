@@ -16,5 +16,7 @@ module.exports = {
         address: DataTypes.STRING,
         email: DataTypes.STRING,
         phone: DataTypes.STRING
+    }, {
+        timestamps: false
     })
 }

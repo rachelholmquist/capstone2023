@@ -28,6 +28,8 @@ h4 {
 
 
 .App-header {
+  position: sticky;
+  top: 0;
   font-family: Arial Narrow;
   background-color: #d6ccc2;
   min-height: 8vh;
