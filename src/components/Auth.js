@@ -1,48 +1,32 @@
-import { useState, useContext } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Auth.css";
-import AuthContext from "../store/authContext";
 import Button from "../UI/Button";
 import axios from "axios";
 
 const Auth = () => {
+  const navigate = useNavigate();
   const [register, setRegister] = useState(true);
-  const [userName, setUserName] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const [address, setAddress] = useState("");
-  const [phone, setPhone] = useState("");
+  const [phone, setPhone] = useState('');
 
   const [message, setMessage] = useState("");
 
-  const authContext = useContext(AuthContext);
-
-  const submitHandler = (e) => {
+  const submitHandler = async (e) =>{
     e.preventDefault();
 
-    axios
-      .post(
-        register
-          ? "http://localhost:4042/register"
-          : "http://localhost:4042/login",
-        { userName, password, firstName, lastName, address, email, phone }
-      )
-      .then((res) => {
-        console.log("after auth", res.data);
-        authContext.login(res.data.token, res.data.exp, res.data.userId);
-      })
-      .catch((error) => {
-        setMessage(error.response.data);
-        // setUserName("");
-        // setPassword("");
-        // setFirstName("");
-        // setLastName("");
-        // setAddress("");
-        // setEmail("");
-        // setPhone("");
-      });
-  };
+      const user = { username, password, email, phone };
+      console.log(user)
+      axios.post("http://localhost:4042/user", {user})
+      .then(() => {
+        console.log('post')
+        navigate("/trip-planning")
+      })    
+     .catch(error => console.log(error));}
+  
+  
 
   return (
     <main>
@@ -50,8 +34,8 @@ const Auth = () => {
         <input
           type="text"
           placeholder="username"
-          value={userName}
-          onChange={(e) => setUserName(e.target.value)}
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
           className="form-input"
         />
         <br />
@@ -62,55 +46,19 @@ const Auth = () => {
           onChange={(e) => setPassword(e.target.value)}
           className="form-input"
         />
-        <br />
         <input
-          type="text"
-          placeholder="first name"
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-          className="form-input"
-        />
-        <br />
-        <input
-          type="text"
-          placeholder="last name"
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
-          className="form-input"
-        />
-        <br />
-        <input
-          type="text"
-          placeholder="address"
-          value={address}
-          onChange={(e) => setAddress(e.target.value)}
-          className="form-input"
-        />
-        <input
-          type="text"
           placeholder="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           className="form-input"
         />
-        <input
-          type="text"
-          placeholder="phone"
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-          className="form-input"
-        />
-        <br />
         <Button className="form-button">
-          {register ? "Sign Up" : "Login"}
+          Sign In
         </Button>
       </form>
       <p>{message}</p>
-      <button onClick={() => setRegister(!register)}>
-        Need to {register ? "Login" : "Sign Up"}?
-      </button>
     </main>
   );
-};
+}
 
 export default Auth;

@@ -37,7 +37,7 @@ const Header = () => {
         className="App-link"
         style={activeLinkStyle}
          to="form">
-            Plan Your Trip
+            Day Planner
         </NavLink>
         <NavLink 
         className="App-link"

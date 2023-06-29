@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import './AccommodationPage.css'
 import Card from "../UI/Card";
+import Button from "../UI/Button";
 
 const AccommodationPage = () => {
   const [rooms, setRooms] = useState([]);
@@ -10,7 +11,6 @@ const AccommodationPage = () => {
     axios
       .get("http://localhost:4042/room")
       .then((res) => {
-        console.log("made it to room page", res.data);
         setRooms(res.data);
       })
       .catch((err) => {
@@ -27,6 +27,7 @@ const AccommodationPage = () => {
         <p>{room.description}</p>
         <h2>MAX ADULTS:{room.maxpeople}</h2>
         <h2>PRICE PER NIGHT:${room.price}</h2>
+        <Button className="Book">BOOK NOW</Button>
         </div>
         
       </Card>

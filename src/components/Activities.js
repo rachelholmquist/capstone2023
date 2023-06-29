@@ -10,7 +10,6 @@ const Activities = () => {
         axios
         .get("http://localhost:4042/activities")
         .then((res) => {
-          console.log("made it to activities page", res.data);
           setActivities(res.data);
         })
         .catch((err) => {
