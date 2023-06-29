@@ -1,18 +1,20 @@
+import '../App.css'
+
 const Footer = () => {
     <div className="footer">
         <div className="footer-row">
-            <a href='http://localhost:4043/'>Home</a>
-            <a href='http://localhost:4043/'>Getting Here</a>
-            <a href='http://localhost:4043/'>Rooms</a>
-            <a href='http://localhost:4043/'>Dining</a>
-            <a href='http://localhost:4043/'>Reviews</a>
+            <p>Home</p>
+            <p>Getting Here</p>
+            <p>Rooms</p>
+            <p>Dining</p>
+            <p>Reviews</p>
         </div>
         <div className="footer-row">
-            <a href='http://localhost:4043/'>Careers</a>
-            <a href='http://localhost:4043/'>Contact Us</a>
-            <a href='http://localhost:4043/'>Resort History</a>
-            <a href='http://localhost:4043/'>Sister Resorts</a>
-            <a href='http://localhost:4043/'>Loyalty Program</a>
+            <p>Careers</p>
+            <p>Contact Us</p>
+            <p>Resort History</p>
+            <p>Sister Resorts</p>
+            <p>Loyalty Program</p>
         </div>
     </div>
 }

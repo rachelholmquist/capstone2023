@@ -1,8 +1,15 @@
 main {
+    background-image:url("https://cf-images.us-east-1.prod.boltdns.net/v1/static/3281700261001/ee9caa23-7af6-4650-8399-2e5bd96bead6/fd0e6634-af6f-432b-9374-8c2a6e3e0be2/1280x720/match/image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #cccccc;
+    background-position: center;
+    background-attachment: fixed;
     align-items: center;
     font-size: 14px;
     display: flex;
     flex-direction: column;
+    border-top: 10px solid #f5ebe0;
 }
 
 h1 {

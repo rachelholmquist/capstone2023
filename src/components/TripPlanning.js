@@ -21,7 +21,8 @@ const TripPlans = () => {
     axios
       .delete(`http://localhost:4042/tripItinerary/${id}`)
       .then((res) => {
-        setTripItinerary(res.data);
+        alert('trip deleted')
+        setTripItinerary(res.data)
       })
       .catch((err) => {
         console.log(err);

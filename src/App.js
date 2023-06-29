@@ -9,6 +9,7 @@ import Activities from './components/Activities';
 import AccommodationPage from './components/AccommodationPage';
 import Form from './components/Form';
 import TripPlanning from './components/TripPlanning';
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route path='trip-planning' element={<TripPlanning/>}/>
       <Route path='form' element={<Form/>}/>
       </Routes>
+      <Footer />
     </div>
     
   );
