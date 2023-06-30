@@ -43,7 +43,7 @@ const Header = () => {
         className="App-link"
         style={activeLinkStyle}
          to="auth">
-            Your Account          
+            Sign In          
         </NavLink>
         <Button className="Book">BOOK NOW</Button>
       </nav>
