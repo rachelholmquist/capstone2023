@@ -127,15 +127,6 @@ const Form = () => {
         7 pm
         <br />
       </Card>
-      {/* <Card className={("activities")}>
-        <h3>Activities I'm interested in:</h3>
-        <input
-          type="text"
-          placeholder='type here...'
-          value={userInterestActivities}
-          onChange={(e) => setUserInterestActivities(e.target.value)}
-        />
-      </Card> */}
       <Card className={"budget"}>
         <h3>Budget:</h3>
         $

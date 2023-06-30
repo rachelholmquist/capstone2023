@@ -20,7 +20,6 @@ module.exports = {
                 await tripItinerary.create({ tripDates, breakfastTime, lunchTime, dinnerTime,  budget,  userId});
                 res.sendStatus(200)
             } catch (error) {
-                console.log("Error in post request");
                 console.log(error);
                 res.sendStatus(400);
             }

@@ -6,18 +6,14 @@ import axios from "axios";
 
 const Auth = () => {
   const navigate = useNavigate();
-  const [register, setRegister] = useState(true);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState('');
-
-  const [message, setMessage] = useState("");
 
   const submitHandler = async (e) =>{
     e.preventDefault();
 
-      const user = { username, password, email, phone };
+      const user = { username, password, email};
       console.log(user)
       axios.post("http://localhost:4042/user", {user})
       .then(() => {
@@ -29,7 +25,8 @@ const Auth = () => {
   
 
   return (
-    <main>
+    <div className="outer">
+    
       <form className="register-form" onSubmit={submitHandler}>
         <input
           type="text"
@@ -38,7 +35,6 @@ const Auth = () => {
           onChange={(e) => setUsername(e.target.value)}
           className="form-input"
         />
-        <br />
         <input
           type="password"
           placeholder="password"
@@ -56,8 +52,8 @@ const Auth = () => {
           Sign In
         </Button>
       </form>
-      <p>{message}</p>
-    </main>
+    
+    </div>
   );
 }
 

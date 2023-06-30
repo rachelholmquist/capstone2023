@@ -21,15 +21,18 @@ const TripPlans = () => {
     axios
       .delete(`http://localhost:4042/tripItinerary/${id}`)
       .then((res) => {
+        alert('day plan deleted')
         setTripItinerary(res.data)
       })
       .catch((err) => {
         console.log(err);
       });
+      <main>{mappedTrips}</main>
   };
 
   const mappedTrips = tripItinerary.map((trip) => {
     const d = new Date(trip.tripDates)
+
     return (
       <Card key={trip.id} className={('trip-display')}>
         <h3>{d.getMonth()}/{d.getDate()}/{d.getFullYear()}</h3>
